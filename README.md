@@ -94,3 +94,5 @@ References:
 [1] Sarmento, S., & Horta, N. (2020). *A machine learning-based pairs trading investment strategy*. Springer International Publishing. https://doi.org/10.1007/978-3-030-47251-1
 
 [2] Liu, P. (2023). *Quantitative trading strategies using Python: Technical analysis, statistical testing, and machine learning.* Berkeley, CA: Apress. https://doi.org/10.1007/978-1-4842-9554-9
+
+[3] Tatsat, H., Puri, S., & Lookabaugh, B. (2020). *Machine learning and data science blueprints for finance.* O'Reilly Media.
