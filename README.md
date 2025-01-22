@@ -15,10 +15,19 @@ This repository contains a Python-based implementation of a pair trading strateg
 - **Clustering**: k-means clustering is utilized to group the stocks into 5 clusters based on the computed features.
 <img src="./k-means.png" width="500" height="450" alt="result">
 
-- **Pair Selection**: Pairs are selected within clusters based on their cointegration, half-life and the number of times for the spread series to cross the mean. In particular we follow the criteria below:
- -Statistically significant t-stat from the Engle-Granger test (5% level)
- -1 < Half-life < 252
- -Spread must cross the mean on average 12 times per year
+- **Pair Selection Criteria**
+
+Pairs are selected within clusters based on their **cointegration**, **half-life**, and the frequency of the spread series crossing the mean. The selection criteria are as follows:
+
+1. **Statistical Significance**:  
+   - The t-stat from the Engle-Granger test must be statistically significant at the **5% level**.
+
+2. **Half-Life of Mean Reversion**:  
+   - The half-life of the spread must satisfy the condition:  
+     **1 < Half-life < 252**.
+
+3. **Spread Crossing the Mean**:  
+   - On average, the spread must cross the mean **at least 12 times per year**.
   
 - **Strategy Implementation**: A trading strategy is implemented on the selected stock pairs, based on the z-score of the spread between the pair.
 - **Performance Metrics**: The strategy's performance is evaluated using the Sharpe Ratio and Maximum Drawdown.
