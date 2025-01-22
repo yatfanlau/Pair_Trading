@@ -12,6 +12,7 @@ This repository contains a Python-based implementation of a pair trading strateg
 
 - **Feature Engineering**: Mean return and volatility are computed for each stock as features for clustering. Columns with more than 10% missing values are removed and other missing values are filled by both forward and backward filling. The return and volatility data are standardized before applying k-means. 
 - **Clustering**: k-means clustering is utilized to group the stocks into 5 clusters based on the computed features.
+<img src="./k-means.png" width="400" height="450" alt="result">
 - **Pair Selection**: Pairs are selected within clusters based on their cointegration and other statistical properties like correlation and half-life.
 - **Strategy Implementation**: A trading strategy is implemented on the selected stock pairs, based on the z-score of the spread between the pair.
 - **Performance Metrics**: The strategy's performance is evaluated using the Sharpe Ratio and Maximum Drawdown.
