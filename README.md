@@ -70,7 +70,7 @@ This repository contains a Python-based implementation of a pair trading strateg
 The implemented trading strategy was evaluated using historical data. In particular, the best stock pairs we currently find out is `('CAH', 'DUK')` with a Sharpe ratio ~2.09, without considering the transaction cost etc. yet. 
 
 The following plot shows that if we invest $1000 at the beginning of the trading period and how would our value of portfolio changes with time.
-<img src="./ret.png" width="500" height="450" alt="result">
+<img src="./ret.png" width="550" height="450" alt="result">
 
 ## Future Work
 
