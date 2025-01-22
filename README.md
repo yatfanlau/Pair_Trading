@@ -88,3 +88,9 @@ This project is ongoing, and several improvements are planned to enhance its rob
 
 - **Transaction Cost**: We did not consider transaction cost etc. in this project and they should be addressed for more realistic situation. 
 
+
+References:
+
+[1] Sarmento, S., & Horta, N. (2020). *A machine learning-based pairs trading investment strategy*. Springer International Publishing. https://doi.org/10.1007/978-3-030-47251-1
+
+[2] Liu, Peng. (2023). Quantitative Trading Strategies Using Python : Technical Analysis, Statistical Testing, and Machine Learning. Berkeley, CA :Apress : Imprint: Apress
