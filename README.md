@@ -8,11 +8,13 @@ This repository contains a Python-based implementation of a pair trading strateg
 
 - **Data Collection**: 
 
-    Historical close prices of S&P 500 stocks are downloaded using the `yfinance` library. I choose the price data from `2009-01-01` to 2017-12-31 for clustering algorithms, 2018-01-01 to 2021-12-31 for applying the criteria for searching promising pairs and 2022-01-01 to 2023-12-31 for final testing data of the strategy.
+    Historical close prices of S&P 500 stocks are downloaded using the `yfinance` library. I choose the price data from `2009-01-01` to `2017-12-31` for clustering algorithms, `2018-01-01` to `2021-12-31` for applying the criteria for searching promising pairs and `2022-01-01` to `2023-12-31` for final testing data of the strategy.
 
-- **Feature Engineering**: Mean return and volatility are computed for each stock as features for clustering. Columns with more than 10% missing values are removed and other missing values are filled by both forward and backward filling. The return and volatility data are standardized before applying k-means. 
+- **Feature Engineering**: Mean return and volatility are computed for each stock as features for clustering. Columns with more than 10% missing values are removed and other missing values are filled by both forward and backward filling. The return and volatility data are standardized before applying k-means.
+  
 - **Clustering**: k-means clustering is utilized to group the stocks into 5 clusters based on the computed features.
 <img src="./k-means.png" width="500" height="450" alt="result">
+
 - **Pair Selection**: Pairs are selected within clusters based on their cointegration and other statistical properties like correlation and half-life.
 - **Strategy Implementation**: A trading strategy is implemented on the selected stock pairs, based on the z-score of the spread between the pair.
 - **Performance Metrics**: The strategy's performance is evaluated using the Sharpe Ratio and Maximum Drawdown.
