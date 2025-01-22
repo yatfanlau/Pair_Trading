@@ -58,6 +58,7 @@ This repository contains a Python-based implementation of a pair trading strateg
    - The total daily returns for the strategy are the sum of the returns from both stocks in the pair.
      
 - **Performance Metrics**: The strategy's performance is evaluated using the Sharpe Ratio and Maximum Drawdown.
+  
    - **Cumulative Returns**: The cumulative product of (1 + total daily returns) gives the cumulative returns of the strategy.  
    - **Sharpe Ratio**:  
      - The average daily return and standard deviation of daily returns are annualized.  
@@ -67,6 +68,8 @@ This repository contains a Python-based implementation of a pair trading strateg
 ## Preliminary Results
 
 The implemented trading strategy was evaluated using historical data. In particular, the best stock pairs we currently find out is `('CAH', 'DUK')` with a Sharpe ratio ~2.09, without considering the transaction cost etc. yet. 
+
+<img src="./k-means.png" width="500" height="450" alt="result">
 
 ## Future Work
 
